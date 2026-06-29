@@ -5,6 +5,7 @@ import Event from "./pages/Event";
 import UseCallbacKCounter from "./pages/UseCallbacKCounter"
 import UseMemoCounter from "./pages/UseMemoCounter";
 import UseRefCounter from "./pages/useRefCounter";
+import UseLayoutEffectWidth from "./pages/UseLayoutEffectWidth";
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
           {/* <Route path={"/"} element={<Event />} /> */}
           {/* <Route path={"/"} element={<UseCallbacKCounter />} /> */}
           {/* <Route path={"/"} element={<UseRefCounter />} /> */}
-          <Route path={"/"} element={<UseMemoCounter />} />
+          {/* <Route path={"/"} element={<UseMemoCounter />} /> */}
+          <Route path="/" element={<UseLayoutEffectWidth />} />
         </Routes>
       </BrowserRouter>
     </>

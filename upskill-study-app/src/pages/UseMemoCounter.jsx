@@ -1,10 +1,10 @@
-import React,{useState,useEffect,useMemo} from 'react';
+import React,{useState,useMemo} from 'react';
 
 function UseMemoCounter(){
     const [count,setCount] = useState(0);
 
     const [products] = useState([
-      {id:1, price:100},
+      {id:1, price:1000},
       {id:2, price:200},
       {id:3, price:300},
     ])
@@ -17,7 +17,7 @@ function UseMemoCounter(){
     
     return(
         <>
-        <h1>UseMemoCounter</h1>
+          <h1>UseMemoCounter</h1>
           <h1>Count: {count}</h1>
           <h1>Total Price: {totalPrice}</h1>
           <button onClick={() => setCount(prev => prev + 1)}>Increment</button>
