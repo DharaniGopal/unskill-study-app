@@ -16,8 +16,8 @@ function App() {
           {/* <Route path={"/"} element={<Event />} /> */}
           {/* <Route path={"/"} element={<UseCallbacKCounter />} /> */}
           {/* <Route path={"/"} element={<UseRefCounter />} /> */}
-          <Route path={"/"} element={<UseMemoCounter />} />
-          {/* <Route path="/" element={<UseLayoutEffectWidth />} /> */}
+          {/* <Route path={"/"} element={<UseMemoCounter />} /> */}
+          <Route path="/" element={<UseLayoutEffectWidth />} />
         </Routes>
       </BrowserRouter>
     </>
