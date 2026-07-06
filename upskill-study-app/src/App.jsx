@@ -6,6 +6,7 @@ import UseCallbacKCounter from "./pages/UseCallbacKCounter"
 import UseMemoCounter from "./pages/UseMemoCounter";
 import UseRefCounter from "./pages/useRefCounter";
 import UseLayoutEffectWidth from "./pages/UseLayoutEffectWidth";
+import SearchDebounceCounter from "./pages/SearchDebounceCounter";
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
           {/* <Route path={"/"} element={<UseCallbacKCounter />} /> */}
           {/* <Route path={"/"} element={<UseRefCounter />} /> */}
           {/* <Route path={"/"} element={<UseMemoCounter />} /> */}
-          <Route path="/" element={<UseLayoutEffectWidth />} />
+          {/* <Route path="/" element={<UseLayoutEffectWidth />} /> */}
+          <Route path="/" element={<SearchDebounceCounter />} />
         </Routes>
       </BrowserRouter>
     </>
