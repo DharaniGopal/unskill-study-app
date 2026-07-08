@@ -2,12 +2,13 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 // import Counter from "./pages/Counter";
 import Event from "./pages/Event";
-import UseCallbacKCounter from "./pages/UseCallbacKCounter"
+import UseCallbacKCounter from "./pages/UseCallbacKCounter";
 import UseMemoCounter from "./pages/UseMemoCounter";
 import UseRefCounter from "./pages/useRefCounter";
 import UseLayoutEffectWidth from "./pages/UseLayoutEffectWidth";
 import SearchDebounceCounter from "./pages/SearchDebounceCounter";
 import Toggle from "./pages/Toggle";
+import TodoList from "./pages/TodoList";
 
 function App() {
   return (
@@ -19,9 +20,10 @@ function App() {
           {/* <Route path={"/"} element={<UseCallbacKCounter />} /> */}
           {/* <Route path={"/"} element={<UseRefCounter />} /> */}
           {/* <Route path={"/"} element={<UseMemoCounter />} /> */}
-          <Route path="/" element={<UseLayoutEffectWidth />} />
+          {/* <Route path="/" element={<UseLayoutEffectWidth />} /> */}
           {/* <Route path="/" element={<SearchDebounceCounter />} /> */}
           {/* <Route path="/" element={<Toggle />} /> */}
+          <Route path="/" element={<TodoList />} />
         </Routes>
       </BrowserRouter>
     </>
