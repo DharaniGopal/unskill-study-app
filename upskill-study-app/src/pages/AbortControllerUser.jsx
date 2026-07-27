@@ -30,7 +30,8 @@ function AbortControllerUser() {
     <>
       <h1>User List</h1>
       {users.map((user) => (
-        <li key={user.id}>{user.name}</li>
+        <li key={user.id}>
+          {user.name}</li>
       ))}
     </>
   );
