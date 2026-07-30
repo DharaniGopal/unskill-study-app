@@ -10,6 +10,7 @@ import SearchDebounceCounter from "./pages/SearchDebounceCounter";
 import Toggle from "./pages/Toggle";
 import TodoList from "./pages/TodoList";
 import AbortControllerUser from "./pages/AbortControllerUser";
+import SortName from "./pages/SortName";
 
 function App() {
   return (
@@ -25,7 +26,8 @@ function App() {
           {/* <Route path="/" element={<SearchDebounceCounter />} /> */}
           {/* <Route path="/" element={<Toggle />} /> */}
           {/* <Route path="/" element={<TodoList />} /> */}
-          <Route path="/" element={<AbortControllerUser />} />
+          {/* <Route path="/" element={<AbortControllerUser />} /> */}
+          <Route path="/" element={<SortName />} />
         </Routes>
       </BrowserRouter>
     </>
