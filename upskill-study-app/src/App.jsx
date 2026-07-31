@@ -1,6 +1,7 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import "./App.css";
-// import Counter from "./pages/Counter";
+import Sidebar from "./components/Sidebar";
+import Counter from "./pages/Counter";
 import Event from "./pages/Event";
 import UseCallbacKCounter from "./pages/UseCallbacKCounter";
 import UseMemoCounter from "./pages/UseMemoCounter";
@@ -12,27 +13,33 @@ import TodoList from "./pages/TodoList";
 import AbortControllerUser from "./pages/AbortControllerUser";
 import SortName from "./pages/SortName";
 import StopWatch from "./pages/StopWatch";
+import CountOptimization from "./pages/CountOptimization";
 
 function App() {
   return (
-    <>
-      <BrowserRouter>
-        <Routes>
-          {/* <Route path={"/"} element={<Counter />} /> */}
-          {/* <Route path={"/"} element={<Event />} /> */}
-          {/* <Route path={"/"} element={<UseCallbacKCounter />} /> */}
-          {/* <Route path={"/"} element={<UseRefCounter />} /> */}
-          {/* <Route path={"/"} element={<UseMemoCounter />} /> */}
-          {/* <Route path="/" element={<UseLayoutEffectWidth />} /> */}
-          {/* <Route path="/" element={<SearchDebounceCounter />} /> */}
-          {/* <Route path="/" element={<Toggle />} /> */}
-          {/* <Route path="/" element={<TodoList />} /> */}
-          {/* <Route path="/" element={<AbortControllerUser />} /> */}
-          {/* <Route path="/" element={<SortName />} /> */}
-          <Route path="/" element={<StopWatch />} />
-        </Routes>
-      </BrowserRouter>
-    </>
+    <BrowserRouter>
+      <div className="app-layout">
+        <Sidebar />
+        <main className="app-content">
+          <Routes>
+            <Route path="/" element={<Navigate to="/counter" replace />} />
+            <Route path="/counter" element={<Counter />} />
+            <Route path="/event" element={<Event />} />
+            <Route path="/use-callback" element={<UseCallbacKCounter />} />
+            <Route path="/use-ref" element={<UseRefCounter />} />
+            <Route path="/use-memo" element={<UseMemoCounter />} />
+            <Route path="/use-layout-effect" element={<UseLayoutEffectWidth />} />
+            <Route path="/search-debounce" element={<SearchDebounceCounter />} />
+            <Route path="/toggle" element={<Toggle />} />
+            <Route path="/todo-list" element={<TodoList />} />
+            <Route path="/abort-controller" element={<AbortControllerUser />} />
+            <Route path="/sort-name" element={<SortName />} />
+            <Route path="/stopwatch" element={<StopWatch />} />
+            <Route path="/count-optimization" element={<CountOptimization />} />
+          </Routes>
+        </main>
+      </div>
+    </BrowserRouter>
   );
 }
 
