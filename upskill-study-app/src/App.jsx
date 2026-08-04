@@ -14,6 +14,7 @@ import AbortControllerUser from "./pages/AbortControllerUser";
 import SortName from "./pages/SortName";
 import StopWatch from "./pages/StopWatch";
 import CountOptimization from "./pages/CountOptimization";
+import ErrorLoadingUseeffect from "./pages/ErrorLoadingUseeffect";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
             <Route path="/sort-name" element={<SortName />} />
             <Route path="/stopwatch" element={<StopWatch />} />
             <Route path="/count-optimization" element={<CountOptimization />} />
+            <Route path="/error-loading-useffect" element={<ErrorLoadingUseeffect />} />
           </Routes>
         </main>
       </div>

@@ -14,6 +14,7 @@ const menus = [
   { path: "/sort-name", label: "Sort Name" },
   { path: "/stopwatch", label: "StopWatch" },
   { path: "/count-optimization", label: "Count Optimization" },
+  { path: "/error-loading-useffect", label: "Error Loading Useffect" },
 ];
 
 function Sidebar() {
